@@ -1,5 +1,5 @@
 # daily-coding-problem
-My solutions send by Daily Coding Problem - https://www.dailycodingproblem.com/
+My solutions to problems send by Daily Coding Problem - https://www.dailycodingproblem.com/
 
 #### Problem 140921
 
