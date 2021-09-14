@@ -1,10 +1,12 @@
 #!/usr/bin/env python
 
-def dcp(list, number):
+def dcp(lst, number):
 
-    list.sort()
-    if sum(list[::2]) <+ number:
-        return True
+    if len(lst)>2:
+        for value in lst[1::]:
+            if lst[0] + value == number:
+                return True
+        dcp(lst[1::], number)
     return False
 
 def main():
