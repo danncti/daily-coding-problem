@@ -1,19 +1,10 @@
 #!/usr/bin/env python3
-###
-# Given an array of integers, find the first missing positive integer in linear time and constant space.
-# In other words, find the lowest positive integer that does not exist in the array.
-# The array can contain duplicates and negative numbers as well.
-
 
 def dcp(lst):
-
-
     # remove negatives numbers
     lst = rem_negs(lst)
-    print (lst)
-    # remove duplicates numbers
+    # remove duplicates
     lst = list(set(lst))
-    print(lst)
 
     lst.sort()
 
@@ -21,17 +12,13 @@ def dcp(lst):
     for item in lst:
 
         if item == last_item :
-            print("a wynik " + str(last_item))
             return last_item
 
         last_item +=1
 
         if item > last_item:
-            print("b wynik " +str(last_item ))
             return last_item
 
-        print(item)
-    print("c wynik " + str(last_item +1 ))
     return last_item +1
 
 # remove negative number from list
@@ -45,12 +32,10 @@ def rem_negs(num_list):
 
 def main():
 
-    print(dcp([3, 4, -1, 1]))
-    print(dcp([1, 2, 0]))
-    print(dcp([0, 2, 0]))
-    print(dcp([0, 2, 2, 3, 3,2 , 5]))
-    # assert dcp([3, 4, -1, 1]) == 2
-    # assert dcp([1, 2, 0]) == 3
+    assert dcp([3, 4, -1, 1]) == 2
+    assert dcp([1, 2, 0]) == 3
+    assert dcp([0, 2, 0]) == 1
+    assert dcp([0, 2, 2, 3, 3, 2, 5]) == 1
 
 if __name__ == "__main__":
     main()
