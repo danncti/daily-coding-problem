@@ -1,6 +1,21 @@
 # daily-coding-problem
 My solutions to problems send by Daily Coding Problem - https://www.dailycodingproblem.com/
 
+#### Problem #5
+
+cons(a, b) constructs a pair, and car(pair) and cdr(pair) returns the first and last element of that pair. For example, car(cons(3, 4)) returns 3, and cdr(cons(3, 4)) returns 4.
+
+Given this implementation of cons:
+
+    def cons(a, b):
+        def pair(f):
+            return f(a, b)
+        return pair
+
+Implement car and cdr.
+
+[Solution](solutions/problem5.py)
+
 #### Problem #4
 
 Given an array of integers, find the first missing positive integer in linear time and constant space. In other words, find the lowest positive integer that does not exist in the array. The array can contain duplicates and negative numbers as well.
