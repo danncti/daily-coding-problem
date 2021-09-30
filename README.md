@@ -1,6 +1,24 @@
 # daily-coding-problem
 My solutions to problems send by Daily Coding Problem - https://www.dailycodingproblem.com/
 
+#### Problem #14
+
+The area of a circle is defined as πr^2. Estimate π to 3 decimal places using a Monte Carlo method.
+
+Hint: The basic equation of a circle is x2 + y2 = r2.
+
+[Solution](solutions/problem14.py)
+
+#### Problem #7
+
+Given the mapping a = 1, b = 2, ... z = 26, and an encoded message, count the number of ways it can be decoded.
+
+For example, the message '111' would give 3, since it could be decoded as 'aaa', 'ka', and 'ak'.
+
+You can assume that the messages are decodable. For example, '001' is not allowed.
+
+[Solution](solutions/problem7.py)
+
 #### Problem #5
 
 cons(a, b) constructs a pair, and car(pair) and cdr(pair) returns the first and last element of that pair. For example, car(cons(3, 4)) returns 3, and cdr(cons(3, 4)) returns 4.
