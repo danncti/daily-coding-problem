@@ -13,7 +13,7 @@ def main():
     scheduler(task, 100)
     scheduler(task, 500)
     scheduler(task, 200)
-    print("waiting for sheduler tasks")
+    print("waiting for scheduled tasks")
 
 if __name__ == "__main__":
     main()
