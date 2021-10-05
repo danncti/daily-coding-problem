@@ -9,6 +9,12 @@ Hint: The basic equation of a circle is x2 + y2 = r2.
 
 [Solution](solutions/problem14.py)
 
+#### Problem #10
+
+Implement a job scheduler which takes in a function f and an integer n, and calls f after n milliseconds.
+
+[Solution](solutions/problem10.py)
+
 #### Problem #7
 
 Given the mapping a = 1, b = 2, ... z = 26, and an encoded message, count the number of ways it can be decoded.
